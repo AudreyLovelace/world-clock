@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+}
+
+body {
+  background-color: #f9f7fe;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p,
+a {
+  color: rgb(82, 82, 82);
+}
+
+a {
+  text-decoration: underline;
+  transition: all 100ms ease-in-out;
+}
+a:hover {
+  cursor: pointer;
+  color: #6fd5d4;
+  box-shadow: 0 2px 1px rgba(128, 128, 128, 0.2);
+}
+
+select {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto 20px;
+  width: 70%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header img {
+  width: 200px;
+  object-fit: cover;
+}
+.container select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.container main .clock:first-child {
+  border-bottom: 1px rgba(128, 128, 128, 0.449) dashed;
+}
+.container main > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.container main > div .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main > div .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container main > div .right h1 {
+  margin-right: 20px;
+}
+
+footer {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 70%;
+  padding: 0 40px;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3,
+  select {
+    font-size: 16px;
+  }
+  p,
+  a {
+    font-size: 12px;
+  }
+  .container {
+    width: 80vw;
+    margin: 100px auto 20px;
+    padding: 20px;
+  }
+  .container header img {
+    width: 30vw;
+  }
+  .container main > div .right h1 {
+    margin-right: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
